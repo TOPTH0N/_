@@ -1,0 +1,99 @@
+{
+    "name": "سورس ريبو بوت .",
+    "description": "تشغيل الاغاني في المجموعات  !",
+    "logo": "https://te.legra.ph/file/d70bb6fa92728763c671f.png",
+    "keywords": ["music", "voice chat", "telegram"],
+    "repository": "https://github.com/SongT8/KF",
+    "stack": "container",
+    "env": {
+        "SESSION_NAME": {
+            "description": "اكتب هنا كود بايروجرام عليك طلب البوت من المطور حصرا : https://t.me/Tbiix",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "اكتب ايدي مالك البوت او اتركها كما هي",
+            "required": true,
+            "value": "6377496746"
+        },
+        "ASSID": {
+            "description": "هنا اكتب ايدي حساب المساعد ",
+            "required": true,
+            "value": ""
+        },
+        "BG_IMG": {
+            "description": "يفضل تركها كما هي ، ضع هنا رابط صورة تليجراف عند تشغيل الاغنية ",
+            "required": true,
+            "value": "https://graph.org/file/061951daec85b0f94b83c.jpg"
+        },
+        "ASSNAME": {
+            "description": "اكتب هنا اسم حساب المساعد",
+            "required": true,
+            "value": ""
+        },
+        "ASSUSERNAME": {
+            "description": "اكتب هنا يوزر حساب المساعد بدون @",
+            "required": true,
+            "value": ""
+        },
+        "BOT_ID": {
+            "description": "اكتب هنا ايدي بوتك ",
+            "required": true,
+            "value": ""
+        },
+        "BOT_USERNAME": {
+            "description": "اكتب هنا يوزر البوت بدون @",
+            "required": true,
+            "value": ""
+        },
+        "SUPPORT": {
+            "description": "اكتب هنا قناة الدعم او اتركها كما هو",
+            "required": true,
+            "value": "Tbiix"
+        },
+        "UPDATE": {
+            "description": "اكتب هنا قناة المطور او اتركها كما هو",
+            "required": true,
+            "value": "Tbiix"
+        },
+        "OWNER_USERNAME": {
+            "description": "اكتب هنا يوزر المطور او مالك البوت",
+            "required": true,
+            "value": "nnnnnnnnnr"
+            
+        },
+        "API_ID": {
+            "description": "لاتلعب ابد",
+            "required": true,
+            "value": "19921316"
+        },
+        "API_HASH": {
+            "description": "لاتلعب ابد",
+            "required": true,
+            "value": "121bfb32fedd296a5bb44366a3df59d6"
+        },
+        "SUDO_USERS": {
+            "description": "اكتب هنا ايديات المطورين او يفضل تركها كما هو .",
+            "required": true,
+            "value": "6377496746"
+        },
+        "BOT_TOKEN": {
+            "description": "هنا اكتب توكن بوتك ",
+            "required": true,
+            "value": ""
+        },
+        "MONGO_DB_URI": {
+            "description": "اكتب هنا قاعدة البيانات ، او اتركها كما هي افضل .",
+            "required": true,
+            "value": "mongodb+srv://veez:mega@cluster0.heqnd.mongodb.net/veez?retryWrites=true&w=majority"
+            
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
